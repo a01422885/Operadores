@@ -20,13 +20,18 @@ Rect::Rect(int valX, int valY) {
 }
 
 Rect Rect::operator+(const Rect& val) {
+    //tienes como parametro un apuntador a un objeto como genérico guardado en memoria
+    
+    //Haces un objeto rectangulo temporal  temp
     Rect temp;
+    //inidcas que la x de este objeto se sumara con la x de
     temp.x = this->x + val.x;
     temp.y = this->y + val.y;
     return temp;
 }
 
 Rect Rect::operator-(const Rect& val) {
+//Haces un objeto rectangulo temporal 
     Rect temp;
     temp.x = this->x - val.x;
     temp.y = this->y - val.y;
